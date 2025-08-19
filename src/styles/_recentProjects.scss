@@ -1,0 +1,119 @@
+#recent-project {
+    position: relative;
+    width: 100%;
+    max-width: 1244px;
+    margin-top: 20px;
+    // background-color: aqua;
+}
+
+.project-container {
+    width: 100%;
+    max-width: 1224px;
+    padding: 20px 15px;
+    color: var(--text-color);
+    // background-color: rgb(173, 143, 103);
+
+    h1 {
+        font-size: clamp(1rem, 0.9vw + 1rem, 1.4rem);
+        font-weight: 900;
+
+        span {
+            color: var(--green);
+        }
+    }
+
+    .latest-p {
+        margin-top: 68px;
+        font-size: clamp(1rem, 0.9vw + 1rem, 1.4rem);
+        font-weight: 900;
+    }
+
+    p {
+        font-size: clamp(0.8em, 1vw + 00.5em, 1em);
+        color: var(--text-color);
+        // color: blue;
+    }
+
+}
+
+.more-project {
+    align-content: center;
+    text-align: center;
+    margin: 15px 0;
+
+    p {
+        font-size: clamp(0.8em, 1vw + 0.05em, 1em);
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        gap: 15px;
+        margin-top: 20px;
+
+        a {
+            position: relative;
+            text-decoration: none;
+            padding: 6px 12px;
+            // margin: 5px 0;
+            background: var(--green);
+            border-radius: 4px;
+            // top: 15px;
+            font-weight: 600;
+            color: var(--text-color-2);
+            border: var(--border);
+            font-size: clamp(0.8em, 1vw + 0.05em, 1em);
+
+            .icon {
+                position: relative;
+                top: 3px;
+                transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+
+            &:hover {
+                .icon {
+                    transform: translateX(3px);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    #recent-project {
+        max-width: 680px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    #recent-project {
+        .project-container {
+            .project {
+                .image {
+                    .img-btns {
+                        padding: 6px;
+
+                        button {
+                            padding: 4px 8px;
+                        }
+                    }
+
+                }
+            }
+
+            .more-project {
+                .links {
+                    flex-direction: column;
+                }
+            }
+        }
+
+    }
+
+}

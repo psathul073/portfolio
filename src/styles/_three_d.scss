@@ -1,0 +1,32 @@
+#three-d-project {
+    position: relative;
+    width: 100%;
+    max-width: 1244px;
+    margin-top: 68px;
+
+
+    .three-dP-container {
+        width: 100%;
+        max-width: 1224px;
+        padding: 20px 15px;
+        color: var(--text-color);
+        // background-color: rgb(173, 143, 103);
+
+        h1 {
+            font-size: clamp(1rem, 0.9vw + 1rem, 1.4rem);
+            font-weight: 900;
+
+            span {
+                color: var(--green);
+            }
+        }
+
+        p {
+            font-size: clamp(0.9em, 1vw + 00.5em, 1em);
+            color: var(--text-color);
+            padding: 10px 0;
+            // color: blue;
+        }
+    }
+
+}

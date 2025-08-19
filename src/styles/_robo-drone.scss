@@ -1,0 +1,21 @@
+.drone-container {
+    position: relative;
+    height: 560px;
+    width: 560px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .drone-container {
+        height: 375px;
+        width: 375px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .drone-container {
+        height: 300px;
+        width: 300px;
+    }
+}
