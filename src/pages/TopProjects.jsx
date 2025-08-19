@@ -2,8 +2,6 @@ import { memo, Suspense, useEffect, useRef, useState } from 'react'
 import Header from '../components/Header';
 import Settings from '../components/Settings';
 import { Link } from 'react-router';
-import { FetchRepoData } from '../API/githubData';
-import ProjectSkelton from '../components/Project-skelton';
 import Icons from '../components/Icons';
 import AllProjects from '../components/AllProjects';
 import "../styles/_recentProjects.scss";
@@ -11,8 +9,6 @@ import "../styles/_recentProjects.scss";
 const TopProjects = memo(function Projects() {
   const [isModelOpen, setIsModalOpen] = useState(false);
   const settingsBtnRef = useRef(null);
-  const [ghRepo, setGhRepo] = useState([]);
-  const [skelton, setSkelton] = useState(false);
 
   // Github user data Fetch
   useEffect(() => {
