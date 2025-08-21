@@ -50,7 +50,7 @@ const Terminal = () =>  {
       </div>
 
       <div className='terminal-btns'>
-        <Link to={'https://drive.google.com/file/d/1Ovw45E0vEuoPBfBNYwzbKgi--aYwshEw/view?usp=sharing'}>Resume <Icons name={'download'} className={'icon'} /> </Link>
+        <Link to={'https://drive.google.com/file/d/1yAbsRhe0VZncBc8l9n4VTxNqeqSxk4CZ/view?usp=sharing'}>Resume <Icons name={'download'} className={'icon'} /> </Link>
         <Link to={'/contact'}>Contact me <Icons name={"arrow"} className={'icon'} /></Link>
       </div>
 
